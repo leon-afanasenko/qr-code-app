@@ -1,0 +1,60 @@
+/* Стили для основного контейнера */
+.qrCodeScannerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Заголовок */
+.qrCodeScannerTitle {
+  text-align: center;
+}
+
+/* Контейнер для камеры */
+.qrCodeScannerCameraContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.qrCodeScannerCamera {
+  width: 100%;
+  max-width: 350px;
+  height: 350px;
+  border: 2px solid black;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Контейнер для данных */
+.qrCodeScannerDataContainer {
+  width: 100%;
+  max-width: 600px;
+}
+
+.qrCodeScannerDataTitle {
+  text-align: center;
+}
+
+.qrCodeScannerDataList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.qrCodeScannerDataItem {
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.qrCodeScannerDataLink {
+  color: #007bff;
+  text-decoration: none;
+}
