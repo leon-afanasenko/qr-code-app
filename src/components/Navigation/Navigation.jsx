@@ -6,29 +6,27 @@ export const Navigation = () => {
     <nav className={styles.nav}>
       <ul className={styles.navList}>
         <li className={styles.navItem}>
-          <Link to="/" className={styles.navLink}>
-            {" "}
-            {/* Ссылка на главную страницу */}
+          <Link to="/qr-code-app" className={styles.navLink}>
             Home
           </Link>
         </li>
         <li className={styles.navItem}>
-          <Link to="/generate" className={styles.navLink}>
+          <Link to="/qr-code-app/generate" className={styles.navLink}>
             Generate QR Code
           </Link>
         </li>
         <li className={styles.navItem}>
-          <Link to="/scan" className={styles.navLink}>
+          <Link to="/qr-code-app/scan" className={styles.navLink}>
             Scan QR Code
           </Link>
         </li>
         <li className={styles.navItem}>
-          <Link to="/scan-history" className={styles.navLink}>
+          <Link to="/qr-code-app/scan-history" className={styles.navLink}>
             Scan History
           </Link>
         </li>
         <li className={styles.navItem}>
-          <Link to="/generate-history" className={styles.navLink}>
+          <Link to="/qr-code-app/generate-history" className={styles.navLink}>
             Generate History
           </Link>
         </li>
