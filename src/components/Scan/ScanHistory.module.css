@@ -1,0 +1,86 @@
+.scanHistoryContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+.scanHistoryContainer h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #000000;
+  text-align: center;
+}
+
+.scanHistoryList {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Элемент истории */
+.scanHistoryItem {
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  border-left: 4px solid #000000;
+}
+
+/* Ссылки */
+.scanHistoryLink {
+  color: #007bff;
+  text-decoration: none;
+  word-break: break-word;
+  font-weight: bold;
+}
+
+.scanHistoryLink:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+/* Кнопка очистки */
+.scanHistoryClearButton {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-top: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Ховер эффект */
+.scanHistoryClearButton:hover {
+  background-color: #1a1a1a;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Анимация нажатия */
+.scanHistoryClearButton:active {
+  background-color: #333333;
+  transform: scale(0.98);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}

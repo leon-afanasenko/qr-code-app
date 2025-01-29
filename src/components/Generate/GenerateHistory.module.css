@@ -1,0 +1,70 @@
+.generateHistoryContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.generateHistoryContainer h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.generateHistoryList {
+  list-style: none;
+  padding: 0;
+  margin: 20px auto;
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Элемент истории */
+.generateHistoryItem {
+  background-color: #f9f9f9;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  border-left: 4px solid #000000;
+}
+
+/* Кнопка очистки */
+.clearHistoryButton {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  margin: 20px auto; /* Центрируем кнопку горизонтально */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Ховер эффект */
+.clearHistoryButton:hover {
+  background-color: #1a1a1a;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Анимация нажатия */
+.clearHistoryButton:active {
+  background-color: #333333;
+  transform: scale(0.98);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}

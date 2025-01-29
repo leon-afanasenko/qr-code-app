@@ -1,0 +1,85 @@
+/* Контейнер навигации */
+.nav {
+  background-color: #000;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #333;
+}
+.navList {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+.navItem {
+  margin-right: 20px;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+
+.navLink:hover {
+  color: #007bff;
+}
+
+/* Список ссылок */
+.navList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+/* Элементы списка */
+.navItem {
+  list-style: none;
+}
+
+/* Ссылки */
+.navLink {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Arial", sans-serif;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.navLink:hover {
+  color: #000;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Активная ссылка */
+.navLink:active {
+  color: #ccc;
+  background-color: #111;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .navList {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navLink {
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+}

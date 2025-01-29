@@ -1,0 +1,108 @@
+/* Основной контейнер */
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+/* Заголовок */
+.homeTitle {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 10px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Текст */
+.homeText {
+  text-align: center;
+  font-size: 18px;
+  color: #333333;
+  margin-bottom: 20px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Анимация */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Футер */
+.homeFooter {
+  width: 100%;
+  padding: 20px 0;
+  background-color: #f8f8f8;
+  border-top: 1px solid #ddd;
+  text-align: center;
+  position: sticky;
+  bottom: 0;
+  z-index: 10;
+}
+
+/* Текст футера */
+.footerText {
+  font-size: 14px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+/* Ссылка футера */
+.footerLink {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footerLink:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+/* Социальные ссылки */
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.socialIcon {
+  color: #007bff;
+  font-size: 24px;
+  transition: color 0.3s, transform 0.2s;
+}
+
+.socialIcon:hover {
+  color: #0056b3;
+  transform: scale(1.1);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .homeTitle {
+    font-size: 28px;
+  }
+
+  .homeText {
+    font-size: 16px;
+  }
+
+  .footerText {
+    font-size: 12px;
+  }
+
+  .socialIcon {
+    font-size: 20px;
+  }
+}
